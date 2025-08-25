@@ -1,29 +1,41 @@
 "use client";
 
-import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
+import { useState } from 'react';
 
 export default function Pricing() {
   const [loading, setLoading] = useState<string | null>(null);
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const router = useRouter();
 
-  useEffect(() => {
-    // Kullanıcının giriş yapıp yapmadığını kontrol et
-    // Bu kısım gerçek uygulamada JWT token veya session kontrolü ile yapılacak
-    const token = localStorage.getItem('authToken');
-    setIsLoggedIn(!!token);
-  }, []);
+  const handlePayment = async (plan: string, amount: number) => {
+    setLoading(plan);
+    
+    try {
+      const response = await fetch('/api/payment', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          plan,
+          amount,
+          currency: 'TRY',
+          customerEmail: 'demo@example.com' // Gerçek uygulamada kullanıcı email'i kullanılacak
+        }),
+      });
 
-  const handlePlanSelection = async (plan: string, amount: number) => {
-    if (!isLoggedIn) {
-      // Giriş yapılmamışsa signin sayfasına yönlendir
-      router.push('/signin');
-      return;
+      const result = await response.json();
+      
+      if (result.success) {
+        alert(`Ödeme başarılı! İşlem ID: ${result.transactionId}`);
+        // Başarılı ödeme sonrası yönlendirme yapılabilir
+      } else {
+        alert('Ödeme başarısız: ' + result.error);
+      }
+    } catch (error) {
+      alert('Ödeme işlemi sırasında bir hata oluştu');
+      console.error('Ödeme hatası:', error);
+    } finally {
+      setLoading(null);
     }
-
-    // Giriş yapılmışsa ödeme sayfasına yönlendir
-    router.push(`/payment?plan=${encodeURIComponent(plan)}&amount=${amount}`);
   };
 
   return (
@@ -87,7 +99,7 @@ export default function Pricing() {
               </ul>
               <button 
                 className="btn w-full bg-linear-to-t from-gray-700 to-gray-600 bg-[length:100%_100%] bg-[bottom] text-white shadow-[inset_0px_1px_0px_0px_--theme(--color-white/.16)] hover:bg-[length:100%_150%] disabled:opacity-50"
-                onClick={() => handlePlanSelection('Başlangıç', 199)}
+                onClick={() => handlePayment('Başlangıç', 199)}
                 disabled={loading === 'Başlangıç'}
               >
                 {loading === 'Başlangıç' ? 'İşleniyor...' : 'Planı Seç'}
@@ -148,7 +160,7 @@ export default function Pricing() {
               </ul>
               <button 
                 className="btn w-full bg-linear-to-t from-indigo-600 to-indigo-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-[inset_0px_1px_0px_0px_--theme(--color-white/.16)] hover:bg-[length:100%_150%] disabled:opacity-50"
-                onClick={() => handlePlanSelection('Profesyonel', 399)}
+                onClick={() => handlePayment('Profesyonel', 399)}
                 disabled={loading === 'Profesyonel'}
               >
                 {loading === 'Profesyonel' ? 'İşleniyor...' : 'Planı Seç'}
@@ -204,7 +216,7 @@ export default function Pricing() {
               </ul>
               <button 
                 className="btn w-full bg-linear-to-t from-gray-700 to-gray-600 bg-[length:100%_100%] bg-[bottom] text-white shadow-[inset_0px_1px_0px_0px_--theme(--color-white/.16)] hover:bg-[length:100%_150%] disabled:opacity-50"
-                onClick={() => handlePlanSelection('Premium', 699)}
+                onClick={() => handlePayment('Premium', 699)}
                 disabled={loading === 'Premium'}
               >
                 {loading === 'Premium' ? 'İşleniyor...' : 'Planı Seç'}

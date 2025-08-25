@@ -1,106 +1,93 @@
-# Kadim Dostum - Yapay Zeka Destekli Terapi Uygulaması
+# Free React / Next.js landing page template
 
-Modern web teknolojileri ile geliştirilmiş, yapay zeka destekli terapi platformu.
+![Open React / Next.js template preview](https://github.com/user-attachments/assets/522a5e46-2a0e-48ca-80eb-87c7fa58f3ea)
 
-## 🚀 Özellikler
+**Open** is a **free React / Next.js landing page template built with Tailwind CSS** for developers/makers who want to create a quick and professional landing page for their open source projects, SaaS products, online services, and more.
 
-- **AI Destekli Terapi:** Kişiselleştirilmiş yapay zeka terapi seansları
-- **Mood Takibi:** Günlük ruh hali analizi ve takibi
-- **7/24 Destek:** Her an yanınızda profesyonel destek
-- **Güvenli Ödeme:** Iyzico entegrasyonu ile güvenli ödeme
-- **Responsive Tasarım:** Tüm cihazlarda mükemmel deneyim
+**UPDATE 2025-02-04** Added Tailwind v4 support!
 
-## 🛠️ Teknolojiler
+Use it for whatever you want, and be sure to reach us out on [Twitter](https://twitter.com/Cruip_com) if you build anything cool/useful with it.
 
-- **Frontend:** Next.js 15, React 18, TypeScript
-- **Styling:** Tailwind CSS
-- **Ödeme:** Iyzico API
-- **Deployment:** GitHub Pages
+Created and maintained with ❤️ by [Cruip.com](https://cruip.com).
 
-## 📱 Sayfalar
+_Version 1.0.0 built with the Cruip CSS is available [here](https://github.com/cruip/open-react-template/releases/tag/1.0.0)._
+_Version 2.0.3 built with Tailwind CSS and React + Vite is available [here](https://github.com/cruip/open-react-template/releases/tag/2.0.3)._
+_Version 3.3.0 (before redesign) built with Tailwind CSS and Next.js is available [here](https://github.com/cruip/open-react-template/releases/tag/3.3.0)._
 
-- **Ana Sayfa:** Platform tanıtımı ve özellikler
-- **Fiyatlandırma:** 3 farklı plan (Başlangıç, Profesyonel, Premium)
-- **Giriş/Kayıt:** Kullanıcı hesap yönetimi
-- **İletişim:** Müşteri desteği ve iletişim formu
-- **Ödeme:** Güvenli ödeme sayfası
+## Live demo
 
-## 🚀 Kurulum
+Check the live demo here 👉️ [https://open.cruip.com/](https://open.cruip.com/)
 
-### Gereksinimler
-- Node.js 18+
-- npm veya pnpm
+## Open PRO
 
-### Adımlar
+[![Open Pro](https://github.com/user-attachments/assets/2062c728-95f1-4d59-aa2d-d63556f625d5)](https://cruip.com/)
+
+## Design files
+
+If you need the design files, you can download them from Figma's Community 👉 https://bit.ly/401KSUS
+
+## Usage
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+### Getting Started
+
+First, run the development server:
+
 ```bash
-# Projeyi klonlayın
-git clone https://github.com/your-username/open-react-template.git
-
-# Proje dizinine gidin
-cd open-react-template
-
-# Bağımlılıkları yükleyin
-npm install
-
-# Development server'ı başlatın
 npm run dev
+# or
+pnpm dev (recommended)
+# or
+yarn dev
 ```
 
-## 🌐 GitHub Pages'e Deployment
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Otomatik Deployment (Önerilen)
-1. GitHub repository'nizi oluşturun
-2. Kodu push edin
-3. GitHub Actions otomatik olarak deploy edecek
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-### Manuel Deployment
-```bash
-# Projeyi build edin
-npm run build
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-# out/ klasörünü GitHub Pages'e yükleyin
-```
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## 🔧 Environment Variables
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-`.env.local` dosyası oluşturun:
+### Learn More
 
-```env
-# Iyzico (Ödeme)
-IYZICO_API_KEY=your_api_key
-IYZICO_SECRET_KEY=your_secret_key
-IYZICO_BASE_URL=https://sandbox-api.iyzipay.com
+To learn more about Next.js, take a look at the following resources:
 
-# Base URL (Production)
-NEXT_PUBLIC_BASE_URL=https://your-username.github.io/open-react-template
-```
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## 📊 Fiyatlandırma
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-| Plan | Fiyat | Özellikler |
-|------|-------|------------|
-| **Başlangıç** | ₺199/ay | 4 AI Seans, Mood Takibi, Email Destek |
-| **Profesyonel** | ₺399/ay | 8 AI Seans, Gelişmiş Analiz, Acil Destek |
-| **Premium** | ₺699/ay | Sınırsız Seans, 7/24 Destek, Özel Hizmetler |
+### Deploy on Vercel
 
-## 🤝 Katkıda Bulunma
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-1. Fork edin
-2. Feature branch oluşturun (`git checkout -b feature/AmazingFeature`)
-3. Commit edin (`git commit -m 'Add some AmazingFeature'`)
-4. Push edin (`git push origin feature/AmazingFeature`)
-5. Pull Request oluşturun
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-## 📄 Lisans
+### Support notes
 
-Bu proje MIT lisansı altında lisanslanmıştır.
+This template has been developed with the App Router (`app`) and React Server Components. If you’re unfamiliar with these beta features, you can find more information about them on the Next.js beta documentation page. So, please note that any request dealing with React (e.g. extra features, customisations, et cetera) is to be considered out of the support scope.
 
-## 📞 İletişim
+For more information about what support covers, please see our (FAQs)[https://cruip.com/faq/].
 
-- **E-posta:** info@kadimdostum.com
-- **Telefon:** +90 (212) 555 0123
-- **Adres:** Levent Mahallesi, Büyükdere Caddesi, No: 123, Şişli / İstanbul
+## Credits
 
----
+- [Nucleo](https://nucleoapp.com/)
 
-**Kadim Dostum** - Ruh sağlığınız için yapay zeka destekli terapi platformu
+## Terms and License
+
+- Released under the [GPL](https://www.gnu.org/licenses/gpl-3.0.html).
+- Copyright 2024 [Cruip](https://cruip.com/).
+- Use it for personal and commercial projects, but please don’t republish, redistribute, or resell the template.
+- Attribution is not required, although it is really appreciated.
+
+## About Us
+
+We're an Italian developer/designer duo creating high-quality design/code resources for developers, makers, and startups.
+
+## Stay in the loop
+
+If you would like to know when we release new resources, you can follow [@pacovitiello](https://x.com/pacovitiello) and [@DavidePacilio](https://x.com/DavidePacilio) on X, or you can subscribe to our [newsletter](https://cruip.com/newsletter/).
