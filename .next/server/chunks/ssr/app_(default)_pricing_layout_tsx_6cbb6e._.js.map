@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/mustafabozyel/Github-Desktop/kadimdostum/app/%28default%29/pricing/layout.tsx"],"sourcesContent":["export const metadata = {\n  title: \"Fiyatlandırma - Kadim Dostum\",\n  description: \"Kadim Dostum yapay zeka terapi uygulaması fiyatlandırma planları\",\n};\n\nexport default function PricingLayout({\n  children,\n}: {\n  children: React.ReactNode;\n}) {\n  return children;\n}\n"],"names":[],"mappings":";;;;AAAO,MAAM,WAAW;IACtB,OAAO;IACP,aAAa;AACf;AAEe,SAAS,cAAc,EACpC,QAAQ,EAGT;IACC,OAAO;AACT"}},
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

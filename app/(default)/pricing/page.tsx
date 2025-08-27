@@ -45,30 +45,30 @@ export default function Pricing() {
           {/* Section header */}
           <div className="pb-12 text-center md:pb-20">
             <h1 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-indigo-200),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-5 font-nacelle text-4xl font-semibold text-transparent md:text-5xl">
-              Size Uygun Planı Seçin
+              Ruh Sağlığınız İçin En İyi Planı Seçin
             </h1>
             <div className="mx-auto max-w-3xl">
               <p className="mb-8 text-xl text-indigo-200/65">
-                Ruh sağlığınız için en uygun terapi planını seçin. Her plan kişiselleştirilmiş AI destekli terapi seansları içerir.
+                AI destekli terapi ile ruh sağlığınızı destekleyin. Her plan kişiselleştirilmiş deneyim ve profesyonel destek sunar.
               </p>
             </div>
           </div>
 
           {/* Pricing tables */}
           <div className="grid gap-8 lg:grid-cols-3">
-            {/* Basic Plan */}
+            {/* Free Plan */}
             <div className="relative rounded-2xl border border-gray-800 bg-gray-900/50 p-8">
               <div className="mb-8">
                 <div className="mb-4 flex items-center justify-between">
-                  <h3 className="text-xl font-semibold text-white">Başlangıç</h3>
-                  <div className="text-sm text-gray-400">Aylık</div>
+                  <h3 className="text-xl font-semibold text-white">Ücretsiz Deneme</h3>
+                  <div className="text-sm text-gray-400">Sınırlı</div>
                 </div>
                 <div className="mb-6">
-                  <span className="text-4xl font-bold text-white">₺199</span>
-                  <span className="text-gray-400">/ay</span>
+                  <span className="text-4xl font-bold text-white">₺0</span>
+                  <span className="text-gray-400">/süresiz</span>
                 </div>
                 <p className="text-sm text-gray-400">
-                  Kişisel terapi yolculuğunuza başlamak için ideal
+                  AI terapi deneyimini keşfetmek için mükemmel başlangıç
                 </p>
               </div>
               <ul className="mb-8 space-y-3 text-sm">
@@ -76,19 +76,25 @@ export default function Pricing() {
                   <svg className="mr-3 h-4 w-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  4 AI Terapi Seansı
+                  10 AI Terapi Mesajı
                 </li>
                 <li className="flex items-center text-gray-300">
                   <svg className="mr-3 h-4 w-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  Günlük Mood Takibi
+                  Temel Ruh Sağlığı Değerlendirmesi
                 </li>
                 <li className="flex items-center text-gray-300">
                   <svg className="mr-3 h-4 w-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  Temel Terapi Teknikleri
+                  Günlük Mood Takip Aracı
+                </li>
+                <li className="flex items-center text-gray-300">
+                  <svg className="mr-3 h-4 w-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  Topluluk Destek Forumu
                 </li>
                 <li className="flex items-center text-gray-300">
                   <svg className="mr-3 h-4 w-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
@@ -99,14 +105,14 @@ export default function Pricing() {
               </ul>
               <button 
                 className="btn w-full bg-linear-to-t from-gray-700 to-gray-600 bg-[length:100%_100%] bg-[bottom] text-white shadow-[inset_0px_1px_0px_0px_--theme(--color-white/.16)] hover:bg-[length:100%_150%] disabled:opacity-50"
-                onClick={() => handlePayment('Başlangıç', 199)}
-                disabled={loading === 'Başlangıç'}
+                onClick={() => handlePayment('Ücretsiz', 0)}
+                disabled={loading === 'Ücretsiz'}
               >
-                {loading === 'Başlangıç' ? 'İşleniyor...' : 'Planı Seç'}
+                {loading === 'Ücretsiz' ? 'İşleniyor...' : 'Ücretsiz Başla'}
               </button>
             </div>
 
-            {/* Pro Plan */}
+            {/* Premium Plan */}
             <div className="relative rounded-2xl border-2 border-indigo-500 bg-gray-900/50 p-8">
               <div className="absolute -top-4 left-1/2 -translate-x-1/2">
                 <span className="rounded-full bg-indigo-500 px-4 py-1 text-sm font-medium text-white">
@@ -115,15 +121,15 @@ export default function Pricing() {
               </div>
               <div className="mb-8">
                 <div className="mb-4 flex items-center justify-between">
-                  <h3 className="text-xl font-semibold text-white">Profesyonel</h3>
+                  <h3 className="text-xl font-semibold text-white">Premium</h3>
                   <div className="text-sm text-gray-400">Aylık</div>
                 </div>
                 <div className="mb-6">
-                  <span className="text-4xl font-bold text-white">₺399</span>
+                  <span className="text-4xl font-bold text-white">₺99</span>
                   <span className="text-gray-400">/ay</span>
                 </div>
                 <p className="text-sm text-gray-400">
-                  Kapsamlı terapi desteği için en iyi seçim
+                  Sınırsız AI terapi ile ruh sağlığınızı sürekli destekleyin
                 </p>
               </div>
               <ul className="mb-8 space-y-3 text-sm">
@@ -131,13 +137,13 @@ export default function Pricing() {
                   <svg className="mr-3 h-4 w-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  8 AI Terapi Seansı
+                  Sınırsız AI Terapi Mesajı
                 </li>
                 <li className="flex items-center text-gray-300">
                   <svg className="mr-3 h-4 w-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  Gelişmiş Mood Analizi
+                  Gelişmiş Ruh Sağlığı Analizi
                 </li>
                 <li className="flex items-center text-gray-300">
                   <svg className="mr-3 h-4 w-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
@@ -149,37 +155,43 @@ export default function Pricing() {
                   <svg className="mr-3 h-4 w-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
+                  Detaylı İlerleme Raporları
+                </li>
+                <li className="flex items-center text-gray-300">
+                  <svg className="mr-3 h-4 w-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
                   Acil Durum Desteği
                 </li>
                 <li className="flex items-center text-gray-300">
                   <svg className="mr-3 h-4 w-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  İlerleme Raporları
+                  Öncelikli Müşteri Desteği
                 </li>
               </ul>
               <button 
                 className="btn w-full bg-linear-to-t from-indigo-600 to-indigo-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-[inset_0px_1px_0px_0px_--theme(--color-white/.16)] hover:bg-[length:100%_150%] disabled:opacity-50"
-                onClick={() => handlePayment('Profesyonel', 399)}
-                disabled={loading === 'Profesyonel'}
+                onClick={() => handlePayment('Premium', 99)}
+                disabled={loading === 'Premium'}
               >
-                {loading === 'Profesyonel' ? 'İşleniyor...' : 'Planı Seç'}
+                {loading === 'Premium' ? 'İşleniyor...' : 'Premium Planı Seç'}
               </button>
             </div>
 
-            {/* Premium Plan */}
+            {/* Enterprise Plan */}
             <div className="relative rounded-2xl border border-gray-800 bg-gray-900/50 p-8">
               <div className="mb-8">
                 <div className="mb-4 flex items-center justify-between">
-                  <h3 className="text-xl font-semibold text-white">Premium</h3>
-                  <div className="text-sm text-gray-400">Aylık</div>
+                  <h3 className="text-xl font-semibold text-white">Kurumsal</h3>
+                  <div className="text-sm text-gray-400">Özel Plan</div>
                 </div>
                 <div className="mb-6">
-                  <span className="text-4xl font-bold text-white">₺699</span>
-                  <span className="text-gray-400">/ay</span>
+                  <span className="text-4xl font-bold text-white">Özel</span>
+                  <span className="text-gray-400">Fiyat</span>
                 </div>
                 <p className="text-sm text-gray-400">
-                  Sınırsız terapi desteği ve özel hizmetler
+                  Çalışanlarınızın ruh sağlığını takip edin ve destekleyin
                 </p>
               </div>
               <ul className="mb-8 space-y-3 text-sm">
@@ -187,39 +199,45 @@ export default function Pricing() {
                   <svg className="mr-3 h-4 w-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  Sınırsız AI Terapi Seansı
+                  Sınırsız Çalışan Erişimi
                 </li>
                 <li className="flex items-center text-gray-300">
                   <svg className="mr-3 h-4 w-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  7/24 Canlı Destek
+                  Kurumsal Ruh Sağlığı Dashboard'u
                 </li>
                 <li className="flex items-center text-gray-300">
                   <svg className="mr-3 h-4 w-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  Özel Terapi Uzmanı Eşleştirme
+                  Çalışan Anonim Raporları
                 </li>
                 <li className="flex items-center text-gray-300">
                   <svg className="mr-3 h-4 w-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  Aile Terapisi Desteği
+                  İş Yeri Ruh Sağlığı Eğitimleri
                 </li>
                 <li className="flex items-center text-gray-300">
                   <svg className="mr-3 h-4 w-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  Öncelikli Destek Hattı
+                  Özel Kurumsal Destek Hattı
+                </li>
+                <li className="flex items-center text-gray-300">
+                  <svg className="mr-3 h-4 w-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  API Entegrasyonu
                 </li>
               </ul>
               <button 
                 className="btn w-full bg-linear-to-t from-gray-700 to-gray-600 bg-[length:100%_100%] bg-[bottom] text-white shadow-[inset_0px_1px_0px_0px_--theme(--color-white/.16)] hover:bg-[length:100%_150%] disabled:opacity-50"
-                onClick={() => handlePayment('Premium', 699)}
-                disabled={loading === 'Premium'}
+                onClick={() => handlePayment('Kurumsal', 0)}
+                disabled={loading === 'Kurumsal'}
               >
-                {loading === 'Premium' ? 'İşleniyor...' : 'Planı Seç'}
+                {loading === 'Kurumsal' ? 'İşleniyor...' : 'Kurumsal Plan İste'}
               </button>
             </div>
           </div>
@@ -227,11 +245,11 @@ export default function Pricing() {
           {/* Additional info */}
           <div className="mt-16 text-center">
             <p className="text-gray-400">
-              Tüm planlar 14 gün ücretsiz deneme içerir. İstediğiniz zaman iptal edebilirsiniz.
+              Premium plan 14 gün ücretsiz deneme içerir. Kurumsal planlar için özel fiyatlandırma yapılır.
             </p>
             <div className="mt-6">
               <a href="/contact" className="text-indigo-400 hover:text-indigo-300">
-                Özel planlar için bizimle iletişime geçin →
+                Kurumsal planlar ve özel ihtiyaçlar için bizimle iletişime geçin →
               </a>
             </div>
           </div>
