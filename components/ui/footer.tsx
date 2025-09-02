@@ -103,7 +103,7 @@ export default function Footer() {
               <li>
                 <a
                   className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="/terms"
+                  href="/terms-of-use"
                 >
                   Kullanım Şartları
                 </a>
@@ -111,7 +111,7 @@ export default function Footer() {
               <li>
                 <a
                   className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="/privacy"
+                  href="/privacy-policy"
                 >
                   Gizlilik Politikası
                 </a>
@@ -151,7 +151,7 @@ export default function Footer() {
                 <span className="text-gray-700"> · </span>
                 <a
                   className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="/terms"
+                  href="/terms-of-use"
                 >
                   Şartlar
                 </a>

@@ -1,0 +1,79 @@
+Kadim Dostum Uygulamasi Gizlilik Politikasi
+Son güncelleme tarihi: 2 Eylül 2025
+Kadim Dostum, kullanicilarinin gizliligine önem verir. Bu Gizlilik Politikasi, uygulamanin hangi verileri topladigini, nasil sakladigini, nasil kullandigini ve kullanicilarin haklarini açiklamaktadir.
+1. Toplanan Veriler
+Uygulama, asagidaki veri kategorilerini toplayabilir:
+• Kullanici Profili Bilgileri:
+  - Ad, e-posta adresi, üyelik türü (Free/Paid/Enterprise)
+  - Google hesabi bilgileri (Google Sign-In kullanildiginda)
+• Sohbet ve Duygu Analizi Verileri:
+  - Sohbet mesajlari ve geçmisi
+  - Duygu analizi sonuçlari (metin ve ses tabanli)
+  - Duygu etiketleri, trendler ve notlar
+• Görev ve Hedef Verileri:
+  - Kullanici tarafindan olusturulan günlük görevler, hedefler ve ilerleme istatistikleri
+• Kullanim ve Analitik Verileri:
+  - Uygulama kullanim istatistikleri
+  - Duygu trendleri ve raporlar
+  - Cihaz bilgileri (platform, isletim sistemi versiyonu, dil ayarlari)
+• Terapi ve Destek Verileri:
+  - Terapi randevusu bilgileri
+  - Kullanicinin talep ettigi içerikler ve öneriler
+
+2. Verilerin Kullanim Amaçlari
+Toplanan veriler su amaçlarla kullanilmaktadir:
+• Yapay zekâ destekli sohbet deneyimi sunmak
+• Duygu analizi yapmak ve kisisellestirilmis öneriler saglamak
+• Kullanicilarin görev ve hedeflerini takip etmelerine yardimci olmak
+• Kullanicilara günlük ipuçlari, motivasyon kartlari ve bildirimler sunmak
+• Uygulama performansini iyilestirmek ve yeni özellikler gelistirmek
+• Kullanici destegi saglamak (Free, Paid, Enterprise üyelik farklariyla birlikte)
+• Güvenlik, dolandiricilik önleme ve hesap korumasi saglamak
+
+3. Veri Saklama ve Güvenlik
+• Veritabani ve Depolama:
+  - Sohbet mesajlari, duygu analizleri, görevler ve kullanici verileri Firebase Firestore üzerinde saklanir.
+  - Dosya saklama islemleri Firebase Storage üzerinde yapilir.
+  - Yerel ayarlar (tema, tercih edilen dil vb.) SharedPreferences ile cihazda saklanir.
+• Güvenlik Önlemleri:
+  - Firebase güvenlik kurallari uygulanmaktadir.
+  - Kullanici bazli veri erisim kontrolü yapilmaktadir.
+  - Tüm veri iletimi SSL/TLS ile sifrelenmektedir.
+  - API anahtarlari güvenli yöntemlerle saklanir.
+
+4. Üçüncü Taraf Servisler
+Kadim Dostum asagidaki servislerle entegre çalismaktadir:
+• Firebase (Google): Kimlik dogrulama, veritabani, dosya saklama, analitik
+• OpenAI API: Yapay zekâ sohbeti (GPT-3.5) ve Text-to-Speech hizmeti
+• Google Sign-In ve Fonts API
+• Custom ML APIs: Duygu analizi (GoEmotions mBERT, SpeechBrain Wav2Vec2)
+Bu servislerin gizlilik politikalari ilgili saglayicilar tarafindan yönetilmektedir.
+
+5. Bildirimler
+• Uygulama, flutter_local_notifications ile yerel bildirimler gönderir.
+• Bildirim tercihleri kullanici tarafindan ayarlar menüsünden yönetilebilir.
+• Zaman dilimi destegi ile bildirimler dogru zamanda iletilir.
+
+6. Kullanici Haklari
+Kullanicilar asagidaki haklara sahiptir:
+• Kendi kisisel verilerine erisme
+• Sohbet geçmisi ve görevlerini silme
+• Profil bilgilerini güncelleme veya hesaplarini kapatma
+• Toplanan verilerin islenmesine iliskin bilgi talep etme
+Bu haklar için e-posta ile bize yazabilirsiniz: mufasabozyel@gmail.com
+
+7. Veri Saklama Süresi
+• Sohbet mesajlari, duygu analizleri ve görev verileri kullanici hesabi aktif oldugu sürece saklanir.
+• Kullanici hesabi silindiginde, tüm veriler makul bir süre içinde kalici olarak silinir.
+
+8. Çocuklarin Gizliligi
+Kadim Dostum, 13 yasin altindaki çocuklar için tasarlanmamistir. Eger yanlislikla böyle bir kayit yapilirsa, hesap kapatilir ve veriler silinir.
+
+9. Gizlilik Politikasindaki Degisiklikler
+Bu Gizlilik Politikasi zaman zaman güncellenebilir. Güncellemeler uygulama içinde veya web sitemizde duyurulur: https://kadimdostum-5bqi.vercel.app
+
+10. Iletisim
+Herhangi bir sorunuz veya talebiniz için bizimle iletisime geçebilirsiniz:
+• E-posta: mufasabozyel@gmail.com
+• Web sitesi: https://kadimdostum-5bqi.vercel.app
+Not: Bu metin hukuki danismanlik yerine geçmez. Uygulamanizin tabi oldugu yerel mevzuata göre ek hükümlere ihtiyaç duyabilirsiniz.

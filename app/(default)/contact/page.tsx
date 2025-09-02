@@ -68,7 +68,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="text-white font-medium">E-posta</h4>
-                    <p className="text-indigo-200/65">info@kadimdostum.com</p>
+                    <p className="text-indigo-200/65">mufasabozyel@gmail.com</p>
                     <p className="text-indigo-200/65">destek@kadimdostum.com</p>
                   </div>
                 </div>
@@ -81,7 +81,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="text-white font-medium">Telefon</h4>
-                    <p className="text-indigo-200/65">+90 (212) 555 0123</p>
+                    <p className="text-indigo-200/65">+90 539 397 39 49</p>
                     <p className="text-indigo-200/65">7/24 Destek Hattı</p>
                   </div>
                 </div>
