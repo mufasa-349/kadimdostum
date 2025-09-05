@@ -125,7 +125,7 @@ export default function Pricing() {
                   <div className="text-sm text-gray-400">Aylık</div>
                 </div>
                 <div className="mb-6">
-                  <span className="text-4xl font-bold text-white">₺99</span>
+                  <span className="text-4xl font-bold text-white">₺149.99</span>
                   <span className="text-gray-400">/ay</span>
                 </div>
                 <p className="text-sm text-gray-400">
@@ -172,7 +172,7 @@ export default function Pricing() {
               </ul>
               <button 
                 className="btn w-full bg-linear-to-t from-indigo-600 to-indigo-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-[inset_0px_1px_0px_0px_--theme(--color-white/.16)] hover:bg-[length:100%_150%] disabled:opacity-50"
-                onClick={() => handlePayment('Premium', 99)}
+                onClick={() => handlePayment('Premium', 149.99)}
                 disabled={loading === 'Premium'}
               >
                 {loading === 'Premium' ? 'İşleniyor...' : 'Premium Planı Seç'}
